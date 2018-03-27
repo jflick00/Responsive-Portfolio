@@ -13,7 +13,7 @@ body {
 
 .auth-image {
   float: left;
-  width: 200px;
+  width: 400px;
   height: auto;
   margin-top: 10px;
   margin-right: 25px;
@@ -246,17 +246,44 @@ input[type=submit] {
   border: 0 none;
 }
 
+/* Portfolio */
+
+.work
+img {
+  width: 100%;
+}
+
+
+h3 {
+  position: absolute;
+  width: 44%;
+  padding: 15px;
+  margin-bottom: 0;
+  font-weight: 300;
+  line-height: 30px;
+  color: #fff;
+  text-align: center;
+  background: #4aaaa5;
+  border-bottom: 0;
+}
 
 
 @media screen and (max-width: 980px) {
-  .main-container {
-    width: 100%;
+  #logo {
+    margin-left: 8%;
+  }
+
+  nav {
+    margin-right: 8%;
   }
   
-  .main-section,
+  .main-section {
+    width: 50%;
+    margin-left: 8%;
+  }
+  
   .sidebar {
-    width: 48%;
-    max-width: 980px;
+    margin-right: 8%;
   }
 
   .work {
@@ -265,38 +292,36 @@ input[type=submit] {
 }
 
 @media screen and (max-width: 768px) {
-  .main-container {
-    width: 100%;
-  }
-
   .main-section,
   .sidebar {
-    width: 100%;
-    max-width: 768px;
+    width: 90%;
+    margin: 0 8% 8% 8%;
   }
 
+  .work {
+    width: 50%;
+  }
 }
 
 @media screen and (max-width: 640px) {
   #logo {
     width: 100%;
-    max-width: 640px;
+    margin-left: 0%;
   }
 
   nav {
     width: 100%;
-    max-width: 640px;
+    margin-left: 0%;
     text-align: center;
   }
-  
-  .main-container {
-    width: 100%;
+
+  .main-section {
+    width: 90%;
+    margin: 8%;
   }
 
-  .main-section,
   .sidebar {
-    width: 100%;
-    max-width: 640px;
+    width: 90%;
   }
 
   .work {
